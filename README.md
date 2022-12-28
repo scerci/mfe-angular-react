@@ -9,11 +9,13 @@ Multiple module integrated react app.
 mfe-host
 ---------------------
 npm install
+
 npm start
 
 
 mfe-remote
 ---------------------
 npm install
+
 ng serve
 
