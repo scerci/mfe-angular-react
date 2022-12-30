@@ -12,10 +12,11 @@ module.exports = {
   output: {
     uniqueName: "mfeRemote",
     publicPath: "auto",
-    scriptType: "text/javascript", 
+    scriptType: "text/javascript",
   },
   optimization: {
-    runtimeChunk: false, 
+    runtimeChunk: false,
+  },
   resolve: {
     alias: {
       ...sharedMappings.getAliases(),
@@ -26,7 +27,6 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-
       // For remotes (please adjust)
       name: "mfeRemote",
       filename: "remoteEntry.js",
