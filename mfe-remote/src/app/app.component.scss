@@ -1,0 +1,22 @@
+.ng-container {
+  min-height: 100vh;
+  background-color: lightsteelblue;
+}
+
+ul {
+  list-style: none;
+  display: table-row;
+  margin: 10px;
+}
+
+ul li {
+  display: table-cell;
+  list-style-type: none;
+  padding: 15px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
-import { mountExt } from "appModule/AppModule";
+import { mountStandalone } from "appModule/AppModule";
 
 const RemoteExtModule = () => {
   useEffect(() => {
-    mountExt();
+    mountStandalone();
   }, []);
   return (
     <div className="external-module">
-      <app-dashboard></app-dashboard>
+      <app-standalone></app-standalone>
     </div>
   );
 };

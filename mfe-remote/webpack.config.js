@@ -12,11 +12,10 @@ module.exports = {
   output: {
     uniqueName: "mfeRemote",
     publicPath: "auto",
-    scriptType: "text/javascript", // zorunlu
+    scriptType: "text/javascript", 
   },
   optimization: {
-    runtimeChunk: false, // zorunlu
-  },
+    runtimeChunk: false, 
   resolve: {
     alias: {
       ...sharedMappings.getAliases(),
@@ -27,7 +26,6 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      // library: { type: "module" }, -- Kapalı kalmalı
 
       // For remotes (please adjust)
       name: "mfeRemote",

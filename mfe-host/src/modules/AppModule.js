@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { mount } from "appModule/AppModule";
 
 const RemoteAppModule = () => {
-  const ref = useRef(null);
   useEffect(() => {
     mount();
   }, []);
