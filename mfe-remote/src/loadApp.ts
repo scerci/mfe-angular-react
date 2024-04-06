@@ -19,8 +19,11 @@ const mountExt = () => {
     .catch((err) => console.error(err));
 };
 
-const mountStandalone = () => {
-  bootstrapApplication(StandaloneComponent);
+const mountStandalone = async ({myvari}: any) => {
+  var a =await bootstrapApplication(StandaloneComponent);
+  (a.components[0].instance as StandaloneComponent).myvari = myvari;
+  (a.components[0].instance as StandaloneComponent).cdRef.detectChanges();
+  return (a.components[0].instance as StandaloneComponent);
 };
 
 export { mount, mountExt, mountStandalone };

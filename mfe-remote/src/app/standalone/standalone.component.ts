@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./standalone.component.scss']
 })
 export class StandaloneComponent {
+  @Input() myvari: string = "value";
 
+  constructor(public cdRef: ChangeDetectorRef) {
+  }
 }
